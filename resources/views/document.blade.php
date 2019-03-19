@@ -9,6 +9,6 @@
         <div id = "text" contenteditable="true">
             This text can be edited by the user.
         </div>
-        <script src="{{ URL::to('js/main.js')}}"></script>
+        <script src="{{ secure_asset(URL::to('js/main.js'))}}"></script>
     </body>
 </html>
