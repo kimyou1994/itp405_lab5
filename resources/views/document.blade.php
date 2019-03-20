@@ -10,7 +10,7 @@
             This text can be edited by the user.
         </div>
         <script>
-            let connection = new WebSocket('ws://kimyou1994-itp405-lab5-node.herokuapp.com');
+            let connection = new WebSocket('wss://kimyou1994-itp405-lab5-node.herokuapp.com');
             connection.onopen = () => {
                 console.log('connected from the frontend');
             }
@@ -28,7 +28,7 @@
 
                 let message = document.getElementById('text').innerHTML;
                 connection.send(message);
-            })
+            });
         </script>
     </body>
 </html>
